@@ -1,0 +1,7 @@
+message ReadBlogReq {
+    string id = 1;
+}
+
+message ReadBlogRes {
+    Blog blog = 1;
+}

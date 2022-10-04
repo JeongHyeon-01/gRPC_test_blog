@@ -1,0 +1,7 @@
+message CreateBlogReq{
+    Blog blog = 1 ; // blog id blank
+}
+
+message CreateBlogRes{
+    Blog blog = 1; // Blog id filled in
+}

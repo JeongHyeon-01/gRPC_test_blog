@@ -1,0 +1,12 @@
+service BlogService  {
+    //(단항) 블로그 만들기
+    rpc CreateBlog(CreateBlogReq) returns (CreateBlogRes);
+    //(단항) 블로그 읽기
+    rpc ReadBlog(ReadBlogReq) returns (ReadBlogRes);
+    //(단항) 블로그 업데이트
+    rpc UpdateBlog(UpdateBlogReq) returns (UpdateBlogRes);
+    //(단항) 블로그 삭제
+    rpc DeleteBlog(DeleteBlogReq) returns (DeleteBlogRes);
+    //(서버스트리밍)
+    rpc ListBlog (ListBlogReq) returns (stream ListBlogRes);
+}
